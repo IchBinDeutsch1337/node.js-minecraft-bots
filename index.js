@@ -18,7 +18,7 @@ function makeid(length) {
 interdal = setInterval(()=>{
     i++;
     if(i > 200) return;
-    name = makeid(8);
+    name = makeid(15);
     bot = mineflayer.createBot({
         host: process.env.ip,
         port: 25565,
@@ -28,4 +28,4 @@ interdal = setInterval(()=>{
     bot.once('spawn', () => {
         bot.chat('/register bruh123! bruh123!')
     })
-},2000)
+},500)
