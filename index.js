@@ -25,5 +25,11 @@ interdal = setInterval(()=>{
         username: name,
         version: "1.8.8",
     })
-    console.log(name,"is logging in");
+    console.log(name, "is logging in");
 },500)
+
+bot.forEach(function(bot, index, array) {
+    bot.once('spawn', () => {
+        bot.chat('/register georgefloydgaming11!2! georgefloydgaming11!2!')
+    })
+});
