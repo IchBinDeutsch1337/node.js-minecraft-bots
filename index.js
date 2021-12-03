@@ -26,12 +26,3 @@ interdal = setInterval(()=>{
         version: "1.8.8",
     })
 },500)
-
-do {
-    bot.forEach(function(bot, index, array) {
-        bot.once('spawn', () => {
-            bot.chat('/register georgefloydgaming11!2! georgefloydgaming11!2!')
-            console.log("1");
-        })
-    });
-} while (true);
