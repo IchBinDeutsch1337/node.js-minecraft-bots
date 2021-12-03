@@ -1,6 +1,6 @@
 const mineflayer = require('mineflayer');
 let interdal;
-let bot;
+var bot = [];
 let name;
 let i = 0;
 
@@ -19,14 +19,11 @@ interdal = setInterval(()=>{
     i++;
     if(i > 200) return;
     name = makeid(15);
-    bot = mineflayer.createBot({
+    bot[name] = mineflayer.createBot({
         host: process.env.ip,
         port: 25565,
         username: name,
         version: "1.8.8",
     })
     console.log(name,"is logging in");
-    bot.once('spawn', () => {
-        bot.chat('/register bruh123! bruh123!')
-    })
 },500)
