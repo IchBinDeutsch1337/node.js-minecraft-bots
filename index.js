@@ -25,6 +25,7 @@ interdal = setInterval(()=>{
         username: name,
         version: "1.8.8",
     })
+    console.log(name,"is logging in");
     bot.once('spawn', () => {
         bot.chat('/register bruh123! bruh123!')
     })
