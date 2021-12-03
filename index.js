@@ -27,9 +27,11 @@ interdal = setInterval(()=>{
     })
 },500)
 
-bot.forEach(function(bot, index, array) {
-    bot.once('spawn', () => {
-        bot.chat('/register georgefloydgaming11!2! georgefloydgaming11!2!')
-        console.log("1");
-    })
-});
+do {
+    bot.forEach(function(bot, index, array) {
+        bot.once('spawn', () => {
+            bot.chat('/register georgefloydgaming11!2! georgefloydgaming11!2!')
+            console.log("1");
+        })
+    });
+} while (true);
