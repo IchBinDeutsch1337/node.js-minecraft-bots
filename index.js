@@ -17,19 +17,19 @@ function makeid(length) {
 
 interdal = setInterval(()=>{
     i++;
-    if(i > 200) return;
-    name = makeid(15);
+    if(i > process.env.limit) return;
+    name = makeid(16);
     bot[name] = mineflayer.createBot({
         host: process.env.ip,
         port: 25565,
         username: name,
         version: "1.8.8",
     })
-    console.log(name, "is logging in");
 },500)
 
 bot.forEach(function(bot, index, array) {
     bot.once('spawn', () => {
         bot.chat('/register georgefloydgaming11!2! georgefloydgaming11!2!')
+        console.log("1");
     })
 });
