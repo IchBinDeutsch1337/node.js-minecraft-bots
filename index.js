@@ -17,8 +17,8 @@ function makeid(length) {
 }
 
 makeBots = setInterval(()=>{
-    i++;
     if(i > process.env.limit) return;
+    i++;
     name = "tacobell" + makeid(5);
     bot[i] = mineflayer.createBot({
         host: process.env.ip,
