@@ -32,7 +32,7 @@ tick = setInterval(()=>{
     for (let index = 1; index < bot.length; ++index) {
         if(name != "undefined") {
             bot[index].on('spawn', () => {
-                console.log(name + " is trying to register")
+                console.log(name)
                 bot[index].chat('/register balls123! balls123!')
             })
     }
