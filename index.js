@@ -29,7 +29,7 @@ makeBots = setInterval(()=>{
 },500)
 
 tick = setInterval(()=>{
-    for (let index = 0; index < bot.length; ++index) {
+    for (let index = 1; index < bot.length; ++index) {
         console.log(name)
         if(name != "undefined") {
             bot[index].on('spawn', () => {
