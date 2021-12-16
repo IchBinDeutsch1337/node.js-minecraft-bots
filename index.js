@@ -35,5 +35,6 @@ tick = setInterval(()=>{
                 console.log(name)
                 bot[index].chat('/register balls123! balls123!')
             })
+        }
     }
-}
+},50)
