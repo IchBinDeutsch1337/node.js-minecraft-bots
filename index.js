@@ -5,6 +5,8 @@ var bot = [];
 let name;
 let i = 0;
 
+bot.setMaxListeners(300);
+
 function makeid(length) {
     var result           = '';
     var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
