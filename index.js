@@ -1,5 +1,6 @@
 const mineflayer = require('mineflayer');
-let interdal;
+let makeBots;
+let tick;
 var bot = [];
 let name;
 let i = 0;
@@ -15,14 +16,21 @@ function makeid(length) {
    return result;
 }
 
-interdal = setInterval(()=>{
+makeBots = setInterval(()=>{
     i++;
     if(i > process.env.limit) return;
     name = makeid(16);
-    bot[name] = mineflayer.createBot({
+    bot[i] = mineflayer.createBot({
         host: process.env.ip,
         port: 25565,
         username: name,
         version: "1.8.8",
     })
 },500)
+
+tick = setInterval(()=>{
+    for (let index = 0; index < bot.length; ++index) {
+        const b = bot[index];
+        b.chat('/register nigger69! nigger69!')
+    }
+},3000)
