@@ -29,9 +29,11 @@ makeBots = setInterval(()=>{
 },500)
 
 tick = setInterval(()=>{
-    for (let index = 0; index < process.env.limit; ++index) {
-        bot[index].on('spawn', () => {
-          bot[index].chat('/register balls123! balls123!')
-        })
+    for (let index = 0; index < bot.length; ++index) {
+        if(name != "undefined") {
+            bot[index].on('spawn', () => {
+              bot[index].chat('/register balls123! balls123!')
+            })
+        }
     }
 },100)
