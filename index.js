@@ -1,11 +1,8 @@
 const mineflayer = require('mineflayer');
 let makeBots;
-let tick;
 var bot = [];
 let name;
 let i = 0;
-
-bot.setMaxListeners(300);
 
 function makeid(length) {
     var result           = '';
@@ -29,10 +26,7 @@ makeBots = setInterval(()=>{
             version: "1.8.8",
         })
     }
-},500)
-
-tick = setInterval(()=>{
-    for (let index = 1; index < bot.length; ++index) {
+        for (let index = 1; index < bot.length; ++index) {
         if(name != "undefined") {
             bot[index].on('spawn', () => {
                 console.log(name)
