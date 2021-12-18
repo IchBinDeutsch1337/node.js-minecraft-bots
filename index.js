@@ -26,4 +26,4 @@ makeBots = setInterval(()=>{
             version: "1.8.8",
         })
     }
-},200)
+},500)
