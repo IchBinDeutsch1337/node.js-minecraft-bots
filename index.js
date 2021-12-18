@@ -18,20 +18,12 @@ function makeid(length) {
 makeBots = setInterval(()=>{
     if(i < process.env.limit) {
         i++;
-        name = "tacobell" + makeid(5);
+        name = "nigga_balls_" + makeid(3);
         bot[i] = mineflayer.createBot({
             host: process.env.ip,
             port: 25565,
             username: name,
             version: "1.8.8",
         })
-    }
-        for (let index = 1; index < bot.length; ++index) {
-        if(name != "undefined") {
-            bot[index].on('spawn', () => {
-                console.log(name)
-                bot[index].chat('/register balls123! balls123!')
-            })
-        }
     }
 },500)
