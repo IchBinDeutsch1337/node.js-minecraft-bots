@@ -18,7 +18,7 @@ function makeid(length) {
 makeBots = setInterval(()=>{
     if(i < process.env.limit) {
         i++;
-        name = "baconator" + makeid(5);
+        name = "gerogefloyd" + makeid(5);
         bot[i] = mineflayer.createBot({
             host: process.env.ip,
             port: 25565,
@@ -26,4 +26,4 @@ makeBots = setInterval(()=>{
             version: "1.8.8",
         })
     }
-},1000)
+},200)
