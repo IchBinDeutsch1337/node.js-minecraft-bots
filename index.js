@@ -1,4 +1,5 @@
 const mineflayer = require('mineflayer');
+var AutoAuth = require('mineflayer-auto-auth')
 let makeBots;
 var bot = [];
 let name;
@@ -24,6 +25,8 @@ makeBots = setInterval(()=>{
             port: 25565,
             username: name,
             version: "1.8.8",
+            plugins: [AutoAuth],
+            AutoAuth: 'penis666!',
         })
     }
 },500)
