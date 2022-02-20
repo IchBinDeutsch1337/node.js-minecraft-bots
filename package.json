@@ -10,7 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "mineflayer": "^3.18.0",
-	"mineflayer-auto-auth": "1.0.0"
+    "mineflayer": "^3.18.0"
   }
 }
