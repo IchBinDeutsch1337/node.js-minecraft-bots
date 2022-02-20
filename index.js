@@ -20,13 +20,17 @@ makeBots = setInterval(()=>{
     if(i < process.env.limit) {
         i++;
         name = "gerogefloyd" + makeid(5);
-        bot[i] = mineflayer.createBot({
+        mineflayer.createBot({
+              plugins: [AutoAuth],
+              AutoAuth: {
+                logging: true,
+                password: 'password',
+                ignoreRepeat: true
+              }
             host: process.env.ip,
             port: 25565,
             username: name,
             version: "1.8.8",
-            plugins: [AutoAuth],
-            AutoAuth: 'penis666!',
-        })
+        });
     }
 },500)
